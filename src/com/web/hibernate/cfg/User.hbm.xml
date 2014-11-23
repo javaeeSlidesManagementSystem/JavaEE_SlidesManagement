@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>  
+    <class name="com.web.entity.StudentEntity" table="student">  
+    <!-- 实体中的名字是name 数据库中的字段为column -->
+        <id name="username" column="stu_name" type= "java.lang.String">  
+            <generator class="native" />  
+        </id>  
+        <property name="password" column="stu_password" type="java.lang.String" />  
+    </class>
+    
+    <class name="com.struts.bean.Teacher" table="teacher">  
+        <id name="username" column="tea_name" type= "java.lang.String">  
+            <generator class="native" />  
+        </id>  
+        <property name="password" column="tea_password" type="java.lang.String" />  
+    </class>  
+    
+</hibernate-mapping>
